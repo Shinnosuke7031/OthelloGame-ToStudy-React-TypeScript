@@ -213,7 +213,6 @@ class Game extends React.Component<{}, GameState> {
     status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     let winner;
     winner = this.state.Winner === null ? ' ' : 'WINNER => '+this.state.Winner;
-
     return (
       <React.Fragment>
         <header>
