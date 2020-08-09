@@ -12,6 +12,7 @@ interface GameState {
   Xcount: number;
   Ocount: number;
   Winner: ('O' | 'X' | 'Draw' | null);
+  isGiveUp: boolean;
 }
 
 class Game extends React.Component<{}, GameState> {
@@ -23,7 +24,11 @@ class Game extends React.Component<{}, GameState> {
       Xcount: 2,
       Ocount: 2,
       Winner: null,
+      isGiveUp: false
     };
+    this.setIsGiveUp = this.setIsGiveUp.bind(this);
+    this._Pass = this._Pass.bind(this);
+    this.setRestart = this.setRestart.bind(this);
   }
 
   setInitialBoard() { //石の初期配置
@@ -38,6 +43,18 @@ class Game extends React.Component<{}, GameState> {
     //this.state.squares.map((temp)=>console.log(temp));
   }
 
+  setRestart() {
+    this.setState({
+      squares: Array(63).fill(null),
+      xIsNext: true,
+      Xcount: 2,
+      Ocount: 2,
+      Winner: null,
+      isGiveUp: false
+    }, () => this.setInitialBoard());
+    
+  }
+
   handleClick(i: number) {
     const squares = {...this.state.squares};
     if (squares[i]) {
@@ -48,6 +65,19 @@ class Game extends React.Component<{}, GameState> {
       squares: squares,
       xIsNext: !this.state.xIsNext,
       }, () => this.checkFripOver_Count(i));
+  }
+
+  setIsGiveUp() {
+    this.setState({isGiveUp: true});
+    if (this.state.xIsNext) {
+      this.setState({Winner: 'O'});
+    } else {
+      this.setState({Winner: 'X'});
+    }
+  }
+
+  _Pass() {
+    this.setState({xIsNext: !this.state.xIsNext});
   }
 
   checkFripOver_Count(i: number) {
@@ -213,6 +243,10 @@ class Game extends React.Component<{}, GameState> {
     status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     let winner;
     winner = this.state.Winner === null ? ' ' : 'WINNER => '+this.state.Winner;
+
+    let restart;
+    restart = this.state.Winner === null ? ' ' : <button type="button" onClick={this.setRestart}> Restart </button>
+
     return (
       <React.Fragment>
         <header>
@@ -232,6 +266,9 @@ class Game extends React.Component<{}, GameState> {
             <div>X Point : {this.state.Xcount}</div>
             <div>O Point : {this.state.Ocount}</div>
             <p className="win">{winner}</p>
+            <button type="button" onClick={this._Pass}> Pass </button>
+            <button type="button" onClick={this.setIsGiveUp}> Give Up </button>
+            {restart}
           </div>
         </div>
       </React.Fragment>

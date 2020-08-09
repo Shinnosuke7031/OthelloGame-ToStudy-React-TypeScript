@@ -66,6 +66,8 @@ header {
 }
 
 .game-info {
+  text-align: center;
+  width: 200px;
   margin-left: 20px;
 }
 
