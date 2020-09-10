@@ -1,5 +1,6 @@
 import React from 'react';
-import '../index.css';
+import styles from '../index.module.css';
+
 
 interface SquareProps {
   value: any;
@@ -8,7 +9,7 @@ interface SquareProps {
 
 const Square = (props: SquareProps) => {
   return (
-    <button className="square" onClick={props.onClick}>
+    <button className={styles.square} onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -29,7 +30,7 @@ const Board =  (props: BoardProps) =>{
 
   return (
     <div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
@@ -39,7 +40,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(6)}
         {renderSquare(7)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(8)}
         {renderSquare(9)}
         {renderSquare(10)}
@@ -49,7 +50,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(14)}
         {renderSquare(15)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(16)}
         {renderSquare(17)}
         {renderSquare(18)}
@@ -59,7 +60,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(22)}
         {renderSquare(23)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(24)}
         {renderSquare(25)}
         {renderSquare(26)}
@@ -69,7 +70,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(30)}
         {renderSquare(31)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(32)}
         {renderSquare(33)}
         {renderSquare(34)}
@@ -79,7 +80,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(38)}
         {renderSquare(39)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(40)}
         {renderSquare(41)}
         {renderSquare(42)}
@@ -89,7 +90,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(46)}
         {renderSquare(47)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(48)}
         {renderSquare(49)}
         {renderSquare(50)}
@@ -99,7 +100,7 @@ const Board =  (props: BoardProps) =>{
         {renderSquare(54)}
         {renderSquare(55)}
       </div>
-      <div className="board-row">
+      <div className={styles.board_row}>
         {renderSquare(56)}
         {renderSquare(57)}
         {renderSquare(58)}

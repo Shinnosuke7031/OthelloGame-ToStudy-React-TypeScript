@@ -26,7 +26,7 @@ header {
   color: red;
 }
 
-.board-row:after {
+.board_row:after {
   clear: both;
   content: "";
   display: table;
@@ -49,13 +49,18 @@ header {
   padding: 0;
   text-align: center;
   width: 34px;
+  cursor: pointer;
 }
 
 .square:focus {
   outline: none;
 }
 
-.kbd-navigation .square:focus {
+.square:hover {
+  background-color: rgb(182, 182, 182);
+}
+
+.kbd_navigation .square:focus {
   background: #ddd;
 }
 
@@ -65,9 +70,34 @@ header {
   justify-content: center;
 }
 
-.game-info {
+.game_info {
   text-align: center;
   width: 200px;
   margin-left: 20px;
+  font-size: 20px;
 }
 
+.under_line{
+  text-decoration: underline;
+  color: rgb(146, 52, 52);
+}
+
+
+.btn {
+  margin: 10px 5px 0 5px;
+  cursor: pointer;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 30px;
+  transition: 0.5s;
+}
+.btn:focus {
+	outline:0;
+}
+.btn:hover {
+  background-color: #fff;
+  border-color: #333;
+  color: #333;
+  transition: 0.5s;
+}
