@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/OthelloGame-ToStudy-React-TypeScript/precache-manifest.287a8dbc2b90bbd9bd64e4a07e6c372f.js"
+  "/OthelloGame-ToStudy-React-TypeScript/precache-manifest.737cccb5e07d01a824628902f7f14ec3.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/OthelloGame-ToStudy-React-TypeScript/static/css/main.708c3cf2.chunk.css",
-    "main.js": "/OthelloGame-ToStudy-React-TypeScript/static/js/main.6d5140a7.chunk.js",
-    "main.js.map": "/OthelloGame-ToStudy-React-TypeScript/static/js/main.6d5140a7.chunk.js.map",
+    "main.css": "/OthelloGame-ToStudy-React-TypeScript/static/css/main.3379e99c.chunk.css",
+    "main.js": "/OthelloGame-ToStudy-React-TypeScript/static/js/main.3703fb19.chunk.js",
+    "main.js.map": "/OthelloGame-ToStudy-React-TypeScript/static/js/main.3703fb19.chunk.js.map",
     "runtime-main.js": "/OthelloGame-ToStudy-React-TypeScript/static/js/runtime-main.f1367fcc.js",
     "runtime-main.js.map": "/OthelloGame-ToStudy-React-TypeScript/static/js/runtime-main.f1367fcc.js.map",
-    "static/js/2.a736615c.chunk.js": "/OthelloGame-ToStudy-React-TypeScript/static/js/2.a736615c.chunk.js",
-    "static/js/2.a736615c.chunk.js.map": "/OthelloGame-ToStudy-React-TypeScript/static/js/2.a736615c.chunk.js.map",
+    "static/js/2.3bad9ed5.chunk.js": "/OthelloGame-ToStudy-React-TypeScript/static/js/2.3bad9ed5.chunk.js",
+    "static/js/2.3bad9ed5.chunk.js.map": "/OthelloGame-ToStudy-React-TypeScript/static/js/2.3bad9ed5.chunk.js.map",
     "index.html": "/OthelloGame-ToStudy-React-TypeScript/index.html",
-    "precache-manifest.287a8dbc2b90bbd9bd64e4a07e6c372f.js": "/OthelloGame-ToStudy-React-TypeScript/precache-manifest.287a8dbc2b90bbd9bd64e4a07e6c372f.js",
+    "precache-manifest.737cccb5e07d01a824628902f7f14ec3.js": "/OthelloGame-ToStudy-React-TypeScript/precache-manifest.737cccb5e07d01a824628902f7f14ec3.js",
     "service-worker.js": "/OthelloGame-ToStudy-React-TypeScript/service-worker.js",
-    "static/css/main.708c3cf2.chunk.css.map": "/OthelloGame-ToStudy-React-TypeScript/static/css/main.708c3cf2.chunk.css.map",
-    "static/js/2.a736615c.chunk.js.LICENSE.txt": "/OthelloGame-ToStudy-React-TypeScript/static/js/2.a736615c.chunk.js.LICENSE.txt"
+    "static/css/main.3379e99c.chunk.css.map": "/OthelloGame-ToStudy-React-TypeScript/static/css/main.3379e99c.chunk.css.map",
+    "static/js/2.3bad9ed5.chunk.js.LICENSE.txt": "/OthelloGame-ToStudy-React-TypeScript/static/js/2.3bad9ed5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f1367fcc.js",
-    "static/js/2.a736615c.chunk.js",
-    "static/css/main.708c3cf2.chunk.css",
-    "static/js/main.6d5140a7.chunk.js"
+    "static/js/2.3bad9ed5.chunk.js",
+    "static/css/main.3379e99c.chunk.css",
+    "static/js/main.3703fb19.chunk.js"
   ]
 }
